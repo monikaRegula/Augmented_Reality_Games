@@ -1,0 +1,121 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.google.ar.sceneform.plugin'
+
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "net.kboy.sceneformsample"
+        minSdkVersion 24
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.google.ar:core:1.5.0'
+    implementation 'com.google.ar.sceneform.ux:sceneform-ux:1.5.1'
+    implementation 'com.google.ar.sceneform:core:1.5.1'
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation "com.android.support:recyclerview-v7:27.1.1"
+    implementation "com.android.support:cardview-v7:27.1.1"
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    implementation "android.arch.lifecycle:extensions:1.1.1"
+    annotationProcessor "android.arch.lifecycle:compiler:1.1.1"
+}
+
+
+
+sceneform.asset('sampledata/board/board.obj',
+        'sampledata/board/board.mat',
+        'sampledata/board/board.sfa',
+        'src/main/assets/board')
+
+
+sceneform.asset('sampledata/button/button.obj',
+        'sampledata/button/button.mat',
+        'sampledata/button/button.sfa',
+        'src/main/assets/button')
+
+sceneform.asset('sampledata/queen/queen.obj',
+        'default',
+        'sampledata/queen/queenWhite.sfa',
+        'src/main/assets/queenWhite')
+
+sceneform.asset('sampledata/queen/queen.obj',
+        'default',
+        'sampledata/queen/queenBlack.sfa',
+        'src/main/assets/queenBlack')
+
+sceneform.asset('sampledata/tower/tower.obj',
+        'default',
+        'sampledata/tower/towerWhite.sfa',
+        'src/main/assets/towerWhite')
+
+sceneform.asset('sampledata/tower/tower.obj',
+        'default',
+        'sampledata/tower/towerBlack.sfa',
+        'src/main/assets/towerBlack')
+
+sceneform.asset('sampledata/bishop/bishop.obj',
+        'default',
+        'sampledata/bishop/bishopWhite.sfa',
+        'src/main/assets/bishopWhite')
+
+sceneform.asset('sampledata/bishop/bishop.obj',
+        'default',
+        'sampledata/bishop/bishopBlack.sfa',
+        'src/main/assets/bishopBlack')
+
+sceneform.asset('sampledata/horse/horse.obj',
+        'default',
+        'sampledata/horse/horseWhite.sfa',
+        'src/main/assets/horseWhite')
+
+sceneform.asset('sampledata/horse/horse.obj',
+        'default',
+        'sampledata/horse/horseBlack.sfa',
+        'src/main/assets/horseBlack')
+
+sceneform.asset('sampledata/king/king.obj',
+        'default',
+        'sampledata/king/kingWhite.sfa',
+        'src/main/assets/kingWhsite')
+
+sceneform.asset('sampledata/king/king.obj',
+        'default',
+        'sampledata/king/kingBlack.sfa',
+        'src/main/assets/kingBlack')
+
+sceneform.asset('sampledata/pawn/pawn.obj',
+        'default',
+        'sampledata/pawn/pawnWhite.sfa',
+        'src/main/assets/pawnWhite')
+
+sceneform.asset('sampledata/pawn/pawn.obj',
+        'default',
+        'sampledata/pawn/pawnBlack.sfa',
+        'src/main/assets/pawnBlack')

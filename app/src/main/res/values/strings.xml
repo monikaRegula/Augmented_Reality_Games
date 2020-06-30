@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">AR Games</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lock">Your board is now locked!!!You can start the game</string>
+    <string name="white">White wins!!!</string>
+    <string name="black">Black wins!!!</string>
+    <string name="start">Start</string>
+    <string name="restart">Nowa gra</string>
+    <string name="score">Punkty</string>
+    <string name="game_over">GAME OVER!</string>
+    <string name="lives">Życia</string>
+</resources>

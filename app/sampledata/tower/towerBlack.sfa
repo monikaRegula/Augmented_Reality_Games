@@ -1,0 +1,41 @@
+{
+  materials: [
+    {
+      name: 'notsowhite',
+      parameters: [
+        {
+          baseColor: null,
+        },
+        {
+          baseColorTint: [
+            0.10706700000000005,
+            0.10706700000000005,
+            0.10706700000000005,
+            1,
+          ],
+        },
+        {
+          metallic: 0.1,
+        },
+        {
+          roughness: 0,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/obj_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'Orientation',
+    ],
+   collision: {},
+       file: 'sampledata/tower/tower.obj',
+       name: 'tower',
+       recenter: 'root',
+     },
+     version: '0.52:1',
+   }

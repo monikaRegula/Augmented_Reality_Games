@@ -1,0 +1,39 @@
+{
+   materials: [
+      {
+         name: "unlit_material",
+         parameters: [
+            {
+               andyColor: "board"
+            },
+            {
+                      metallic: 0.1,
+            },
+            {
+                      roughness: 0,
+                    },
+                    {
+                      opacity: null,
+                    },
+         ],
+         source: "sampledata/board/board.mat",
+      },
+   ],
+   model: {
+      attributes: [
+         "Position",
+         "TexCoord",
+         "Orientation",
+      ],
+      collision: {},
+      file: "sampledata/board/board.obj",
+      name: "board",
+   },
+   samplers: [
+      {
+         file: "sampledata/board/board.png",
+         name: "board",
+      },
+   ],
+   version: "0.51:1",
+}

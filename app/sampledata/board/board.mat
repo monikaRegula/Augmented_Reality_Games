@@ -1,0 +1,22 @@
+material {
+    name: "board",
+    parameters: [
+        {
+            type: "sampler2d",
+            name: "andyColor"
+        }
+    ],
+    requires: [
+        "position",
+        "uv0"
+    ],
+    shadingModel: "unlit",
+}
+
+fragment {
+    void material(inout MaterialInputs material) {
+        prepareMaterial(material);
+        float3 texSample = texture(materialParams_andyColor, getUV0()).rgb;
+        material.baseColor.rgb = texSample;
+    }
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="onSwitchButtonClicked"
+    tools:context=".activity.SceneformActivity">
+
+    <Switch
+        android:id="@+id/board"
+        android:layout_width="match_parent"
+        android:layout_height="15px"
+        android:checked="false"
+        android:onClick="onSwitchButtonClicked"
+        android:text="Lock board"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:checked="false"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <fragment
+        android:id="@+id/sceneformFragment"
+        android:name="com.google.ar.sceneform.ux.ArFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/board"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.32999998"></fragment>
+
+</android.support.constraint.ConstraintLayout>

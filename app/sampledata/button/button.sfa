@@ -1,0 +1,35 @@
+{
+   materials: [
+      {
+         name: "unlit_material",
+         parameters: [
+            {
+               andyColor: "board"
+            },
+            {
+            opacity: 0
+            }
+
+
+
+         ],
+         source: "sampledata/button/button.mat",
+      },
+   ],
+   model: {
+      attributes: [
+         "Position",
+         "TexCoord",
+         "Orientation",
+      ],
+      collision: {},
+      file: "sampledata/button/button.obj",
+      name: "board",
+   },   samplers: [
+      {
+         file: "sampledata/button/blank.png",
+         name: "board",
+      },
+   ],
+   version: "0.51:1",
+}
